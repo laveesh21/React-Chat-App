@@ -9,6 +9,7 @@ const connectDB = async ()=>{
         console.log(`ERROR: ${error}`)
         process.exit(1)
     }
+
 }
 
 export default connectDB
