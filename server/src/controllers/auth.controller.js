@@ -1,30 +1,24 @@
-import express from "express";
-import jwt from 'jsonwebtoken';
 import User from "../models/user.model.js";
-
-const router = express.Router();
 
 const login = async(req,res) =>{
     try{
 
         const{username, password} = req.body
-        
-        
+
         if (!username || !password) {
             return res.status(400).json({ message: "Please provide all required fields." });
         }
-        
+
         const user = await User.findOne({ username });
         if (!user) {
             return res.status(400).json({ message: "Username doesn't exit! " });
         }
 
-        
         const isPasswordCorrect = user.isPasswordCorrect(password)
         if (!isPasswordCorrect) {
             return res.status(401).json({ message: 'Incorrect password.' });
         }
-        console.log('Trigger')
+
     
         const token = await user.generateAccessTokenAndSetCookie(res);
 

@@ -33,12 +33,13 @@ const userSchema = new Schema({
     required: [true,"Password is required"]
    },
 
-   onlinestatus: {
+   onlineStatus: {
     type: String,
     enum: ['AVAILABLE', 'BUSY'],
     default: 'AVAILABLE'
-   }
+   },
    
+
 }, {timestamps: true});
 
 
