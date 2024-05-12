@@ -34,7 +34,7 @@ function LogIn() {
             theme: "dark",
           });
 
-          navigate('/home')
+          navigate('/chats')
 
     } catch (error) {
         toast.error("Login Failed", {

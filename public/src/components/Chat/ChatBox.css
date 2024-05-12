@@ -1,0 +1,44 @@
+.chatHeader{
+    border:2px solid rgb(56, 63, 102);
+    display: flex;
+    justify-content:space-between;
+    padding: 10px 20px;
+}
+
+.chatBody{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    background-color: rgb(3, 1, 12);
+    height: 70vh;
+}
+
+.chatTextBox{
+
+    border: 2px solid rgb(56, 63, 102);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid rgb(13, 141, 51); */
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    /* background-color: rgb(13, 49, 90); */
+    border-bottom:1px solid rgba(102, 102, 102, 0.274) ;
+    /* border: 2px solid ; */
+    width: 100%;
+    /* max-width: 50%; */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 26px;
+    padding: 3px 15px;
+}
+
+.recieved{
+    align-items: flex-start;
+    /* background-color: rgb(13, 49, 90); */
+}

@@ -1,0 +1,27 @@
+.user-container{
+    width:400px;
+    height: 100vh;
+    background-color: rgb(5, 10, 39);
+    border: 2px solid black;
+
+}
+
+.websiteLogo{
+    background-color: rgb(12, 139, 33);
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+
+}
+
+.users{
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+    background-color: rgb(8, 10, 70);
+    margin-top: 10px;
+}
+
+.selected{
+    background-color: rgb(93, 34, 128);
+}
